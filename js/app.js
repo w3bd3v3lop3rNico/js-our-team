@@ -1,4 +1,4 @@
-const containerDOMEl = document.querySelector('.container')
+const rowDOMEl = document.querySelector('.row')
 const team = [
     {
         nome:'Wayne Barnett',
@@ -37,13 +37,17 @@ for (let i = 0; i < team.length; i++)  {
     const membroTeam = team[i]
     console.log(membroTeam)
     const membroTeamHTML = `
-    <figure>
-        <img src="./img/${membroTeam.foto}">
-    </figure>
-    <h4>${membroTeam.nome}</h4>
-    <p>${membroTeam.ruolo}</p>
+    <div class="col">
+        <div class="card member-card">
+            <figure class="photo">
+                <img src="./img/${membroTeam.foto}">
+            </figure>
+            <h4 class="member-name">${membroTeam.nome}</h4>
+            <p class="member-role">${membroTeam.ruolo}</p>
+        </div>
+    </div>
     `
     console.log(membroTeamHTML)
 
-    containerDOMEl.innerHTML += membroTeamHTML
+    rowDOMEl.innerHTML += membroTeamHTML
 }

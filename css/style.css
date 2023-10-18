@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+figure > img {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 30px;
+    min-width: 1000px;
+    background-color: blanchedalmond;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.col {
+    padding: 0 20px;
+    flex-basis: calc((100% / 12) * 4);
+}
+
+.photo {
+    margin-bottom: 5px;
+}
+
+.member-card {
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
