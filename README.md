@@ -1,0 +1,5 @@
+- Creare l’array di oggetti FATTO
+- stampare in console le info di ogni membro del team FATTO
+- stampare le info sul dom in stringhe 
+- Trasformare la stringa foto in immagine
+- organizzare i membri in card
