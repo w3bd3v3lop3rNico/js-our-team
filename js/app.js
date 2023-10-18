@@ -1,3 +1,4 @@
+const containerDOMEl = document.querySelector('.container')
 const team = [
     {
         nome:'Wayne Barnett',
@@ -30,7 +31,19 @@ const team = [
         foto:'barbara-ramos-graphic-designer.jpg'
     },
 ]
-console.log(team, team[0])
+// console.log(team, team[0])
 for (let i = 0; i < team.length; i++)  {
-    console.log(team[i])
+    // console.log(team[i])
+    const membroTeam = team[i]
+    console.log(membroTeam)
+    const membroTeamHTML = `
+    <figure>
+        <img src="./img/${membroTeam.foto}">
+    </figure>
+    <h4>${membroTeam.nome}</h4>
+    <p>${membroTeam.ruolo}</p>
+    `
+    console.log(membroTeamHTML)
+
+    containerDOMEl.innerHTML += membroTeamHTML
 }
